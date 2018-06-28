@@ -1,0 +1,29 @@
+{
+  "name": "hypernova-test",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "server": "ts-node src/server.ts",
+    "client": "node src/client.js",
+    "build:server": "tsc",
+    "build:client": "parcel build src/index.ts -o dist/app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hypernova": "^2.2.6",
+    "hypernova-client": "^1.1.0",
+    "hypernova-react": "^2.1.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^9",
+    "@types/react": "^16.4.4",
+    "@types/react-dom": "^16.0.6",
+    "parcel-bundler": "^1.9.3",
+    "ts-node": "^7.0.0"
+  }
+}
